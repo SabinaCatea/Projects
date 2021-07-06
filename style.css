@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+.row {
+  overflow: hidden;
+  filter: blur();
+  backdrop-filter: blur(200px);
+  display: flex;
+  background-color: rgba(131, 67, 131, 0.54);
+  border-radius: 20px;
+  margin: 160px 450px;
+  height: 570px;
+  border-radius: 9px;
+  position: relative;
+}
+.column {
+  flex: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgb(117, 70, 117),
+    rgb(240, 136, 240)
+  );
+  font-family: "Nunito", sans-serif;
+  font-size: 50px;
+}
+
+.box {
+  background-color: rgba(131, 67, 131, 0.94);
+  border-radius: 20px;
+  margin: 0 auto;
+  font-size: 25px;
+  width: 150px;
+  margin-top: 180px;
+  padding: 10px;
+}
+
+.btn {
+  position: absolute;
+  color: #444;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  font-family: inherit;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  transition: all 0.2s;
+  border: none;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.activePlayerP {
+  background-color: rgba(242, 185, 242, 0.6);
+}
+.hidden {
+  display: none;
+}
+
+.newGame {
+  top: 65px;
+}
+
+.rollDice {
+  top: 350px;
+}
+
+.hold {
+  top: 420px;
+}
+.diceImage {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 180px;
+}
+.column.activePlayer {
+  font-weight: bold;
+}
+.winner {
+  background-color: rgba(100, 27, 100, 0.9);
+  overflow: hidden;
+}

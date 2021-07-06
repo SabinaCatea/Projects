@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Player game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="row">
+      <div class="column Player0 activePlayerP">
+        <p class="headP0">Player 1</p>
+        <p class="scoreP0">0</p>
+        <div class="box">
+          <p>CURRENT</p>
+          <p class="currentP0">0</p>
+        </div>
+      </div>
+      <div class="column Player1">
+        <p class="headP1">Player 2</p>
+        <p class="scoreP1">0</p>
+        <div class="box">
+          <p>CURRENT</p>
+          <p class="currentP1">0</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <div>
+          <img
+            class="diceImage hidden"
+            style="width: 100px"
+            src="Images/dice2.png"
+            alt=""
+          />
+        </div>
+        <div><button class="btn newGame">New Game</button></div>
+        <div><button class="btn rollDice">Roll Dice</button></div>
+        <div><button class="btn hold">Hold</button></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
